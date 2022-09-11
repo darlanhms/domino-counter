@@ -36,7 +36,7 @@ const TeamBoard: React.FC<TeamBoardProps> = ({ team, isLastTeam }) => {
       borderRightWidth={isLastTeam ? '0px' : '2px'}
       borderRightColor="gray.600"
       templateColumns="1fr"
-      templateRows="35px 1fr 40px"
+      templateRows="35px 1fr 3.5rem"
     >
       <Editable
         defaultValue={team.name}
@@ -80,6 +80,7 @@ const TeamBoard: React.FC<TeamBoardProps> = ({ team, isLastTeam }) => {
         borderRadius="0px"
         colorScheme="blackAlpha"
         bgColor="gray.800"
+        h={14}
         _hover={{
           bgColor: 'gray.700',
         }}

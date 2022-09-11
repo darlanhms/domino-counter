@@ -17,9 +17,9 @@ export default function MyApp({ Component, pageProps }: AppProps): React.ReactEl
               name="viewport"
               content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
             />
-            <meta name="description" content="Contador de dominó" />
+            <meta name="description" content="Contador de domino" />
             <meta name="keywords" content="dominó contador jogo" />
-            <title>Contador de dominó</title>
+            <title>Contador de domino</title>
 
             <link rel="manifest" href="/manifest.json" />
             <link href="/icons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
