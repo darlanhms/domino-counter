@@ -1,9 +1,11 @@
-import Head from 'next/head';
+import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
+import theme from '../styles/theme';
 
 export default function MyApp({ Component, pageProps }: AppProps): React.ReactElement {
   return (
-    <>
+    <ChakraProvider theme={theme}>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -22,6 +24,6 @@ export default function MyApp({ Component, pageProps }: AppProps): React.ReactEl
         <meta name="theme-color" content="#317EFB" />
       </Head>
       <Component {...pageProps} />
-    </>
+    </ChakraProvider>
   );
 }
