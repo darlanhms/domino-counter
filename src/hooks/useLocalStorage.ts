@@ -37,7 +37,7 @@ export default function useLocalStorage<T>(key: string, defaultValue?: T): UseLo
     if (typeof value === 'object') {
       localStorage.setItem(key, JSON.stringify(value));
     } else {
-      localStorage.setItem(key, value as string);
+      localStorage.setItem(key, value as any);
     }
   }, [value]);
 
